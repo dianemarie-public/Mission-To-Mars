@@ -1,5 +1,6 @@
 from bs4 import BeautifulSoup as bs
 from splinter import Browser
+import requests
 import time
 
 def init_browser():
@@ -8,7 +9,7 @@ def init_browser():
     return Browser('chrome', **executable_path, headless=False)
 
 # Initiate browser
-def scrape():
+def scrape_info():
     browser = init_browser()
     
     # Visit the website
