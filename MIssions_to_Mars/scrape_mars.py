@@ -1,36 +1,49 @@
-# From Unit 12 Week 3 Activity 09 Ins_Scrape_And_Render file: scrape_craigslist.py
-
-# Import module used to connect Python with MongoDb
-import pymongo
-# Import BeautifulSoup
 from bs4 import BeautifulSoup as bs
-# Import Requests module
-import requests
-# Import splinter
 from splinter import Browser
-from webdriver_manager.chrome import ChromeDriverManager
-# Import Pandas
-import pandas as pd
-
+import time
 
 def init_browser():
     # @NOTE: Replace the path with your actual path to the chromedriver
-    executable_path = {"executable_path": "/Users/diane/.wdm/drivers/chromedriver/win32/87.0.4280.88/chromedriver"}
-    # C:\Users\diane\.wdm\drivers\chromedriver\win32\87.0.4280.88\chromedriver
-    return Browser("chrome", **executable_path, headless=False)
+    executable_path = {'executable_path': 'C:/Users/diane/.wdm/drivers/chromedriver/win32/87.0.4280.88/chromedriver'}
+    return Browser('chrome', **executable_path, headless=False)
 
-
+# Initiate browser
 def scrape():
     browser = init_browser()
-    news_list = {}
-
+    
+    # Visit the website
     url = "https://mars.nasa.gov/news/"
     browser.visit(url)
 
+    # ?
+    time.sleep(1)
+    
+    # Scrape page into Soup
     html = browser.html
     soup = bs(html, "html.parser")
 
-    news_list["news_title"] = soup.find("h3", class_="result-title").get_text()
-    news_list["news_p"] = soup.find("div", class_="rollover_description_inner").get_text()
+    # Get the slides
+    slides = soup.find('li', class_='slide')
 
-    return news_list
+    # Get the news date
+    news_date = slides.find_all('div', class_='list_date')[0].text
+    
+    # Get the news title
+    news_title = slides.find_all('h3')[0].text
+    
+    # Get the news paragraph
+    news_p = slides.find_all('div', class_='rollover_description_inner')[0].text
+
+    # Store data in dictionary
+    news_data = {
+        "date": news_date,
+        "title": news_title,
+        "paragraph": news_p
+    }
+
+    # Close the browser after scraping
+    browser.quit()
+
+    # Return results
+    return news_data
+    
