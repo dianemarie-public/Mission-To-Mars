@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- <link rel="icon" href="../../favicon.ico"> -->
+
+    <title>Mission to Mars</title>
+
+    <!-- Bootstrap core CSS -->
+    <!-- MUST UPDATE PATH -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- <link href="../static/bootstrap.min.css" rel="stylesheet"> -->
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <!-- <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet"> -->
+
+    <!-- Custom styles for this template -->
+    <link href="../static/jumbotron.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <!-- <script src="../../assets/js/ie-emulation-modes-warning.js"></script> -->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Mission to Mars</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+        <h1>Mission to Mars</h1>
+        <!-- <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p> -->
+        <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Scrape New Data &raquo;</a></p>
+      </div>
+    </div>
+
+    <div class="container">
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col">
+          <h2>Latest Mars News</h2>
+          <h3>News Date: {{ mars.news_date }}</h3>
+        </div>
+        <div class="col">
+          <!-- <h2 id="tables-bordered">Mars Facts</h2>
+              <table class="table table-bordered table-striped table-responsive">
+                <tbody>
+                  <tr>
+                    <td>Equatorial Diameter:</td>
+                    <td>6,792 km</td>
+                  </tr>
+                  <tr>
+                    <td>Polar Diameter:</td>
+                    <td>6,752 km</td>
+                  </tr>
+                  <tr>
+                    <td>Mass:</td>
+                    <td>6.39 × 10^23 kg (0.11 Earths)</td>
+                  </tr>
+                  <tr>
+                    <td>Moons:</td>
+                    <td>2 (Phobos &amp; Deimos)</td>
+                  </tr>
+                  <tr>
+                    <td>Orbit Distance:</td>
+                    <td>227,943,824 km (1.38 AU)</td>
+                  </tr>
+                  <tr>
+                    <td>Orbit Period:</td>
+                    <td>687 days (1.9 years)</td>
+                  </tr>
+                  <tr>
+                    <td>Surface Temperature:</td>
+                    <td>-87 to -5 °C</td>
+                  </tr>
+                  <tr>
+                    <td>First Record:</td>
+                    <td>2nd millennium BC</td>
+                  </tr>
+                  <tr>
+                    <td>Recorded By:</td>
+                    <td>Egyptian astronomers</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div><!-- /example -->
+          <!-- </table>
+       </div>
+        <div class="row">
+            <h2>Mars Hemispheres</h2>
+          </div>
+          <!-- <div class="row"> -->
+            <!-- <div class="col"> -->
+              <!-- <div class="panel panel-primary"> -->
+                <!-- <div class="panel-heading"> -->
+                  <!-- <h3 class="panel-title">Panel title 1</h3> -->
+                <!-- </div> -->
+                <!-- <div class="panel-body"> -->
+                  <!-- Panel content 1
+                </div>
+              </div>
+              <div class="panel panel-primary">
+                <div class="panel-heading">
+                  <h3 class="panel-title">Panel title 2</h3>
+                </div>
+                <div class="panel-body">
+                  Panel content 2
+                </div>
+              </div>
+            </div> -->
+              <!-- <div class="w-100"></div>
+            <div class="col">
+              <div class="panel panel-primary">
+                <div class="panel-heading">
+                  <h3 class="panel-title">Panel title 3</h3>
+                </div>
+                <div class="panel-body">
+                  Panel content 3
+                </div>
+              </div>
+              <div class="panel panel-primary">
+                <div class="panel-heading">
+                  <h3 class="panel-title">Panel title 4</h3>
+                </div>
+                <div class="panel-body">
+                  Panel content 4
+                </div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Footer
+      ================================================== -->
+      <hr>
+      <footer>
+        <p>Diane Witt for Northwestern Data Science Bootcamp</p>
+      </footer>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../static/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
