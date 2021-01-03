@@ -1,30 +1,35 @@
-# From Unit 12 Week 3 Activity 09 Ins_Scrape_And_Render file: app.py
-
 from flask import Flask, render_template, redirect
 from flask_pymongo import PyMongo
 import scrape_mars
 
+# Create an instance of Flask
 app = Flask(__name__)
 
-# Use flask_pymongo to set up mongo connection
-app.config["MONGO_URI"] = "mongodb://localhost:27017/craigslist_app"
-mongo = PyMongo(app)
-
-# Or set inline
-# mongo = PyMongo(app, uri="mongodb://localhost:27017/craigslist_app")
+# Use PyMongo to establish Mongo connection
+mongo = PyMongo(app, uri="mongodb://localhost:27017/mars_app")
 
 
+# Route to render index.html template using data from Mongo
 @app.route("/")
 def index():
-    listings = mongo.db.listings.find_one()
-    return render_template("index.html", listings=listings)
+    # Find one record of data from the mongo database
+    mars = mongo.db.collection.find_one()
+    # Return template and data
+    return render_template("index.html", 
+    mars=mars)
 
-
+# Route that will trigger the scrape function
 @app.route("/scrape")
-def scraper():
-    listings = mongo.db.listings
-    listings_data = scrape_craigslist.scrape()
-    listings.update({}, listings_data, upsert=True)
+def scrape():
+    mars = mongo.db.mars
+    # Run the scrape function
+    data = scrape_mars.scrape()
+    mars.update(
+        {},
+        data,
+        upsert=True
+    )
+    # Redirect back to home page
     return redirect("/", code=302)
 
 
