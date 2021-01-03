@@ -48,23 +48,26 @@
     </nav>
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron">
+    <div class="jumbotron text-center">
       <div class="container">
         <h1>Mission to Mars</h1>
         <!-- <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p> -->
-        <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Scrape New Data &raquo;</a></p>
+        <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Get Data &raquo;</a></p>
       </div>
     </div>
 
+    <!-- mars data -->
     <div class="container">
-      <!-- Example row of columns -->
       <div class="row">
         <div class="col">
-          <h2>Latest Mars News</h2>
-          <h3>News Date: {{ mars.news_date }}</h3>
+          <h3>Latest Mars News</h3>
+          <body>
+            <h5>{{news_date}}</h5>
+          </body>
+          <p>News Date: {{ mars.news_date }}</p>
         </div>
         <div class="col">
-          <!-- <h2 id="tables-bordered">Mars Facts</h2>
+          <h2 id="tables-bordered">Mars Facts</h2>
               <table class="table table-bordered table-striped table-responsive">
                 <tbody>
                   <tr>
@@ -105,7 +108,8 @@
                   </tr>
                 </tbody>
               </table>
-            </div><!-- /example -->
+            </div>
+            <!-- /example -->
           <!-- </table>
        </div>
         <div class="row">
