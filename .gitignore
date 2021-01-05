@@ -126,3 +126,6 @@ dmypy.json
 
 mission_to_mars-Copy1.ipynb
 web_scraping_homework_workspace.code-workspace
+mars_facts_table.html
+TEST/app.py
+TEST/index.html
