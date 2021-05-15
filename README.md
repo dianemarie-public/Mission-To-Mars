@@ -1,1 +1,1 @@
-Mapping Earthquake Data
+Web Scraping
