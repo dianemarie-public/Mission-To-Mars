@@ -1,29 +1,31 @@
 import pandas as pd
+import requests
+from bs4 import BeautifulSoup as bs
 
-url = "https://tax.alaska.gov/programs/oil/production/ans.aspx?9/1/2021"
+url = "https://tax.alaska.gov/programs/oil/production/ans.aspx?"
+month = '1'
+month
+year = '2021'
+year
+day = '1'
 
+url = url + str(month) + '/' + str(day) + '/' + str(year)
+url
+# -----------------------------
+# set the url for the most recent page update
+# url = "https://tax.alaska.gov/programs/oil/production/ans.aspx?9/1/2021"
 tables = pd.read_html(url)
-# tables
 type(tables)
-
-# tables[6]
 df = tables[6]
-# df.head()
 df = df.loc[2:]
-# df.head()
 df = df.reset_index(drop=True)
-# df.head()
-# identify incomplete all_rows
-# df.count()
+
+
 del df[8]
 del df[9]
 del df[10]
 del df[11]
 del df[12]
-# df.head()
-# df.dtypes
-# df[0]
-# df.info()
 
 df = df.rename(columns = {0:'date', 1:'prudhoe', 2:'kaparuk', 3:'endicott', 4:'lisburne', 5:'alpine', 6:'ans', 7:'inventories'})
 df.columns
