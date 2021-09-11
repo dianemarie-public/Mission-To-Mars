@@ -42,3 +42,5 @@ df['inventories'] = pd.to_numeric(df['inventories'],errors='coerce')
 # drop any rows with NaN
 df = df.dropna(how='any')
 df
+
+# Next steps: write a loop to loop through all the webpages by month and year, then we can scrape and append each into a dataframe and export it
