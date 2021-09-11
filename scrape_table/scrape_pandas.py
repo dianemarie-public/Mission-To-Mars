@@ -1,7 +1,7 @@
 import pandas as pd
 
 # found earliest data available (should scrape from dropdown menu link below)
-# https://tax.alaska.gov/programs/oil/production.aspx?10034
+url = 'https://tax.alaska.gov/programs/oil/production.aspx?'
 month = '1'
 month
 year = '2002'
@@ -9,7 +9,6 @@ year
 day = '1'
 start_url = url + str(month) + '/' + str(day) + '/' + str(year)
 start_url
-
 
 # -----------------------------
 # set the url for the most recent page update
