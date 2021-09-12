@@ -1,20 +1,54 @@
+# scraping information from websites using pandas and gazpacho https://pypi.org/project/gazpacho/
+
+# finding date (in month and years) options for our data to use in custom url (will need to loop through pages to extract all available data, tbd...)
+
+from gazpacho import get, Soup
+url = "https://tax.alaska.gov/programs/oil/production/ans.aspx?"
+html = get(url)
+soup = Soup(html)
+# soup
+
+date_list = soup.find('option')[1:]
+type(date_list)
+len(date_list)
+date_list[0]
+
+date_list = date_list[0:]
+# date_list
+
+count = len(date_list)
+count
+count = count - 1
+print(count)
+
+date_list[count].attrs['value']
+oldest = date_list[count].attrs['value']
+oldest
+
+date_list[0].attrs['value']
+newest = date_list[0].attrs['value']
+newest
+newest = str(newest)
+newest
+
+url = 'https://tax.alaska.gov/programs/oil/production/ans.aspx?'
+url + newest
+
+# using the url combo found above, setting the pd.read_html(url) to extract the table data below
+
 import pandas as pd
 
-# found earliest data available (should scrape from dropdown menu link below)
-url = 'https://tax.alaska.gov/programs/oil/production.aspx?'
-month = '1'
-month
-year = '2002'
-year
-day = '1'
-start_url = url + str(month) + '/' + str(day) + '/' + str(year)
-start_url
+url = url + newest
+url
+type(url)
 
 # -----------------------------
 # set the url for the most recent page update
-end_url = "https://tax.alaska.gov/programs/oil/production/ans.aspx?9/1/2021"
-tables = pd.read_html(end_url)
+# end_url = "https://tax.alaska.gov/programs/oil/production/ans.aspx?9/1/2021"
+
+tables = pd.read_html(url)
 type(tables)
+tables[6]
 df = tables[6]
 df = df.loc[2:]
 df = df.reset_index(drop=True)
@@ -42,34 +76,3 @@ df['inventories'] = pd.to_numeric(df['inventories'],errors='coerce')
 # drop any rows with NaN
 df = df.dropna(how='any')
 df
-
-# Next steps: write a loop to loop through all the webpages by month and year, then we can scrape and append each into a dataframe and export it
-
-from gazpacho import get, Soup
-url = "https://tax.alaska.gov/programs/oil/production/ans.aspx?"
-html = get(url)
-soup = Soup(html)
-# soup
-
-date_list = soup.find('option')[1:]
-type(date_list)
-len(date_list)
-date_list[0]
-
-date_list = date_list[0:]
-# date_list
-
-newest = date_list[0].attrs
-newest
-
-count = len(date_list)
-count
-count = count - 1
-print(count)
-
-oldest = date_list[count].attrs['value']
-oldest
-
-option[0]
-end_date = option[0].attrs['value']
-end_date
