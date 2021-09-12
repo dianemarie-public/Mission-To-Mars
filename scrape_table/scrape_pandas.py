@@ -42,10 +42,6 @@ url = url + newest
 url
 type(url)
 
-# -----------------------------
-# set the url for the most recent page update
-# end_url = "https://tax.alaska.gov/programs/oil/production/ans.aspx?9/1/2021"
-
 tables = pd.read_html(url)
 type(tables)
 tables[6]
