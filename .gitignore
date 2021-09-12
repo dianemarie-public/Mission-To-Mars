@@ -130,3 +130,15 @@ mars_facts_table.html
 TEST/app.py
 TEST/index.html
 12-web-scraping.md
+modern-data-acquisition/scrape_spend.py
+modern-data-acquisition/start.py
+modern-data-acquisition/scrape_sandbox.py
+modern-data-acquisition/scrape_ans.py
+modern-data-acquisition/scrape_ans
+modern-data-acquisition/ans_page_loop.py
+modern-data-acquisition/begin.ipynb
+modern-data-acquisition/crap.py
+modern-data-acquisition/data/bad.html
+modern-data-acquisition/get_sandbox.py
+modern-data-acquisition/README.md
+modern-data-acquisition/scrape_pandas.py
