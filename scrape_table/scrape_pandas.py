@@ -44,3 +44,32 @@ df = df.dropna(how='any')
 df
 
 # Next steps: write a loop to loop through all the webpages by month and year, then we can scrape and append each into a dataframe and export it
+
+from gazpacho import get, Soup
+url = "https://tax.alaska.gov/programs/oil/production/ans.aspx?"
+html = get(url)
+soup = Soup(html)
+# soup
+
+date_list = soup.find('option')[1:]
+type(date_list)
+len(date_list)
+date_list[0]
+
+date_list = date_list[0:]
+# date_list
+
+newest = date_list[0].attrs
+newest
+
+count = len(date_list)
+count
+count = count - 1
+print(count)
+
+oldest = date_list[count].attrs['value']
+oldest
+
+option[0]
+end_date = option[0].attrs['value']
+end_date
