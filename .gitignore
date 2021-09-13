@@ -150,3 +150,16 @@ Mission_To_Mars/mission_to_mars.ipynb
 Mission_To_Mars/app.py
 Mission_To_Mars/scrape_mars.py
 *.ipynb
+homework/Mission_To_Mars/app.py
+homework/Mission_To_Mars/mission_to_mars.py
+homework/Mission_To_Mars/Images/pic1.png
+homework/Mission_To_Mars/README.md
+homework/Mission_To_Mars/templates/index.html
+homework/Mission_To_Mars/static/mars_facts.csv
+homework/Mission_To_Mars/static/jumbotron.css
+homework/Mission_To_Mars/static/ie10-viewport-bug-workaround.js
+homework/Mission_To_Mars/static/bootstrap.min.js
+homework/Mission_To_Mars/static/bootstrap.min.css.map
+homework/Mission_To_Mars/static/bootstrap.min.css
+homework/Mission_To_Mars/static/bootstrap.css
+homework/Mission_To_Mars/scrape_mars.py
