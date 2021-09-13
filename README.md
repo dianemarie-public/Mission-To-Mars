@@ -8,9 +8,9 @@ Project story:
 **Scope**
 
 Project plan and tasks:
-- Mission to Mars uses python, [Flask](https://flask.palletsprojects.com/en/2.0.x/), [PyMongo](https://pymongo.readthedocs.io/en/stable/index.html), and [MongoDB Atlas](https://pymongo.readthedocs.io/en/stable/atlas.html) (graded bootcamp assignment).
 - scrape_table uses python, pandas, and [Gazpacho](https://pypi.org/project/gazpacho/)
 [![scraper: gazpacho](https://img.shields.io/badge/scraper-gazpacho-C6422C)](https://github.com/maxhumber/gazpacho) 
+<!-- - Mission to Mars uses python, [Flask](https://flask.palletsprojects.com/en/2.0.x/), [PyMongo](https://pymongo.readthedocs.io/en/stable/index.html), and [MongoDB Atlas](https://pymongo.readthedocs.io/en/stable/atlas.html) (graded bootcamp assignment). -->
 
 **Analysis**
 
@@ -30,5 +30,4 @@ Project insights from data and process:
 **Conclusion**
 
 Futher action, data exploration and limitations.
-- Continue to develop by looping through webpages to scrape all available data.
-- Installed and used Atom with Hydrogen to code interactively during this project. It was difficult to troubleshoot kernel problems. 
+- Add headers to the csv file
