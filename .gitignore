@@ -164,3 +164,5 @@ homework/Mission_To_Mars/static/bootstrap.min.css
 homework/Mission_To_Mars/static/bootstrap.css
 homework/Mission_To_Mars/scrape_mars.py
 scrape_tables/README.md
+scrape-tables/scrape_test.py
+mission-to-mars/Images/pic1.png
