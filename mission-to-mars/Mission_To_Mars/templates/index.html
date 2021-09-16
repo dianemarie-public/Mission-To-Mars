@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Mission to Mars</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="../static/jumbotron.css" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Mission to Mars</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main jumbotron -->
+    <div class="jumbotron text-center">
+      <div class="container">
+        <h1>Mission to Mars</h1>
+        <!-- Get Data button -->
+        <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Get Data &raquo;</a></p>
+      </div>
+    </div>
+
+    <!-- mars data -->
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h3>Latest Mars News</h3>
+          <h4>{{ mars.news_date }}</h4>
+          <h4>{{ mars.news_title }}</h4>
+          <h4>{{ mars.news_p }}</h4>
+        </div>
+      </div>
+
+      <div class="col">
+          <h2 id="tables-bordered">Mars Facts</h2>
+              <table class="table table-bordered table-striped table-responsive">
+                <tbody>
+                  <tr>
+                    <td>Equatorial Diameter:</td>
+                    <td>6,792 km</td>
+                  </tr>
+                  <tr>
+                    <td>Polar Diameter:</td>
+                    <td>6,752 km</td>
+                  </tr>
+                  <tr>
+                    <td>Mass:</td>
+                    <td>6.39 × 10^23 kg (0.11 Earths)</td>
+                  </tr>
+                  <tr>
+                    <td>Moons:</td>
+                    <td>2 (Phobos &amp; Deimos)</td>
+                  </tr>
+                  <tr>
+                    <td>Orbit Distance:</td>
+                    <td>227,943,824 km (1.38 AU)</td>
+                  </tr>
+                  <tr>
+                    <td>Orbit Period:</td>
+                    <td>687 days (1.9 years)</td>
+                  </tr>
+                  <tr>
+                    <td>Surface Temperature:</td>
+                    <td>-87 to -5 °C</td>
+                  </tr>
+                  <tr>
+                    <td>First Record:</td>
+                    <td>2nd millennium BC</td>
+                  </tr>
+                  <tr>
+                    <td>Recorded By:</td>
+                    <td>Egyptian astronomers</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="row">
+            <h2>Mars Hemispheres</h2>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="panel panel-primary">
+                <div class="panel-heading">
+                  <h3 class="panel-title">Panel title 1</h3>
+                </div>
+                <div class="panel-body">
+                  Panel content 1
+                </div>
+              </div>
+              <div class="panel panel-primary">
+                <div class="panel-heading">
+                  <h3 class="panel-title">Panel title 2</h3>
+                </div>
+                <div class="panel-body">
+                  Panel content 2
+                </div>
+              </div>
+            </div>
+              <div class="w-100"></div>
+            <div class="col">
+              <div class="panel panel-primary">
+                <div class="panel-heading">
+                  <h3 class="panel-title">Panel title 3</h3>
+                </div>
+                <div class="panel-body">
+                  Panel content 3
+                </div>
+              </div>
+              <div class="panel panel-primary">
+                <div class="panel-heading">
+                  <h3 class="panel-title">Panel title 4</h3>
+                </div>
+                <div class="panel-body">
+                  Panel content 4
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+</body>
+
+</html>
