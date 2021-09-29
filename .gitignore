@@ -175,3 +175,6 @@ bootcamp-activities/templates/index.html
 12-web-scraping/
 alaska-oil-production/scrape_test.py
 alaska-oil-production/akdor_oil_production.csv
+WEBSCRAPINGHW/app.py
+WEBSCRAPINGHW/scrape.py
+WEBSCRAPINGHW/templates/index.html
