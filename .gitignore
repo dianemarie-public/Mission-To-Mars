@@ -166,3 +166,12 @@ homework/Mission_To_Mars/scrape_mars.py
 scrape_tables/README.md
 scrape-tables/scrape_test.py
 mission-to-mars/Images/pic1.png
+bootcamp-activities/app.py
+bootcamp-activities/Ins_MongoScraping.py
+bootcamp-activities/Ins_Splinter.py
+bootcamp-activities/pymongo-intro.py
+bootcamp-activities/pymongo-scraping.py
+bootcamp-activities/templates/index.html
+12-web-scraping/
+alaska-oil-production/scrape_test.py
+alaska-oil-production/akdor_oil_production.csv
