@@ -124,12 +124,6 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-mission_to_mars-Copy1.ipynb
-web_scraping_homework_workspace.code-workspace
-mars_facts_table.html
-TEST/app.py
-TEST/index.html
-12-web-scraping.md
 modern-data-acquisition/scrape_spend.py
 modern-data-acquisition/start.py
 modern-data-acquisition/scrape_sandbox.py
@@ -142,14 +136,7 @@ modern-data-acquisition/data/bad.html
 modern-data-acquisition/get_sandbox.py
 modern-data-acquisition/README.md
 modern-data-acquisition/scrape_pandas.py
-Untitled.ipynb
 
-Mission_To_Mars/app.py
-Mission_To_Mars/mission_to_mars.ipynb
-Mission_To_Mars/mission_to_mars.ipynb
-Mission_To_Mars/app.py
-Mission_To_Mars/scrape_mars.py
-*.ipynb
 homework/Mission_To_Mars/app.py
 homework/Mission_To_Mars/mission_to_mars.py
 homework/Mission_To_Mars/Images/pic1.png
@@ -164,16 +151,9 @@ homework/Mission_To_Mars/static/bootstrap.min.css
 homework/Mission_To_Mars/static/bootstrap.css
 homework/Mission_To_Mars/scrape_mars.py
 
-mission-to-mars/Images/pic1.png
 bootcamp-activities/app.py
 bootcamp-activities/Ins_MongoScraping.py
 bootcamp-activities/Ins_Splinter.py
 bootcamp-activities/pymongo-intro.py
 bootcamp-activities/pymongo-scraping.py
 bootcamp-activities/templates/index.html
-12-web-scraping/
-
-WEBSCRAPINGHW/app.py
-WEBSCRAPINGHW/scrape.py
-WEBSCRAPINGHW/templates/index.html
-
