@@ -143,7 +143,7 @@ modern-data-acquisition/get_sandbox.py
 modern-data-acquisition/README.md
 modern-data-acquisition/scrape_pandas.py
 Untitled.ipynb
-scrape_tables/scrape_test.py
+
 Mission_To_Mars/app.py
 Mission_To_Mars/mission_to_mars.ipynb
 Mission_To_Mars/mission_to_mars.ipynb
@@ -163,8 +163,7 @@ homework/Mission_To_Mars/static/bootstrap.min.css.map
 homework/Mission_To_Mars/static/bootstrap.min.css
 homework/Mission_To_Mars/static/bootstrap.css
 homework/Mission_To_Mars/scrape_mars.py
-scrape_tables/README.md
-scrape-tables/scrape_test.py
+
 mission-to-mars/Images/pic1.png
 bootcamp-activities/app.py
 bootcamp-activities/Ins_MongoScraping.py
@@ -173,10 +172,8 @@ bootcamp-activities/pymongo-intro.py
 bootcamp-activities/pymongo-scraping.py
 bootcamp-activities/templates/index.html
 12-web-scraping/
-alaska-oil-production/scrape_test.py
-alaska-oil-production/akdor_oil_production.csv
+
 WEBSCRAPINGHW/app.py
 WEBSCRAPINGHW/scrape.py
 WEBSCRAPINGHW/templates/index.html
-alaska-oil-production/akdor_oil_production.csv
-alaska-oil-production/akdor_oil_production.csv
+
