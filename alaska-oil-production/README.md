@@ -17,8 +17,19 @@
 
         ![install](Images/install_gazpacho.png)
 
-- scrape_table uses python, pandas, and [Gazpacho](https://pypi.org/project/gazpacho/)
-[![scraper: gazpacho](https://img.shields.io/badge/scraper-gazpacho-C6422C)](https://github.com/maxhumber/gazpacho) 
+- Scrape_primary website for date options using Gazpacho
+
+    [![scraper: gazpacho](https://img.shields.io/badge/scraper-gazpacho-C6422C)](https://github.com/maxhumber/gazpacho)
+- Create a list of custom urls for each of the date options extracted above:
+- Extract table data from each custom url using a for loop.
+- Save the extracted data as a csv (or json, or...).
+- Store the csv/json data on AWS?
+- Read the csv with the scraped data into Pandas.
+
+- Clean and explore data with Seaborn visualizations:
+
+    ![seaborn](Images/seaborn.png)
+
 <!-- - Mission to Mars uses python, [Flask](https://flask.palletsprojects.com/en/2.0.x/), [PyMongo](https://pymongo.readthedocs.io/en/stable/index.html), and [MongoDB Atlas](https://pymongo.readthedocs.io/en/stable/atlas.html) (graded bootcamp assignment). -->
 
 **Analysis**
